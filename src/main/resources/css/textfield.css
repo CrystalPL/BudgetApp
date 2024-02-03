@@ -1,0 +1,6 @@
+.text-field {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+    -fx-background-color: white;
+    -fx-border-color: #CDD1D6;
+    -fx-border-width: 1px 1px 1px 1px;
+}

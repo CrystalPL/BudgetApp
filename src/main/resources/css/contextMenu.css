@@ -1,0 +1,14 @@
+.menu-item {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 1px 1px 1px 1px;
+}
+
+.menu-item:hover {
+    -fx-background-color: #EBE9F6;
+    -fx-border-color: #CDD1D6;
+    -fx-border-width: 1px 1px 1px 1px;
+}
+
+.menu-item > .label {
+    -fx-text-fill: #52438f;
+}

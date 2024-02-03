@@ -1,0 +1,52 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+    id "com.github.johnrengelman.shadow" version "7.1.2"
+
+}
+compileJava.options.encoding = 'UTF-8'
+
+group = 'pl.crystalek'
+version = '1.0'
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainModule = 'pl.crystalek.budgetapp'
+    mainClass = 'pl.crystalek.budgetapp.main.FakeMain'
+}
+
+javafx {
+    version = '20'
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.28'
+    annotationProcessor 'org.projectlombok:lombok:1.18.28'
+    
+    implementation 'org.openjfx:javafx:20'
+    implementation 'org.openjfx:javafx-base:20'
+    implementation 'org.openjfx:javafx-controls:20'
+    implementation 'org.openjfx:javafx-swing:20'
+    implementation 'org.openjfx:javafx-fxml:20'
+    implementation 'org.openjfx:javafx-graphics:20'
+
+    implementation 'com.zaxxer:HikariCP:5.0.1'
+    implementation 'mysql:mysql-connector-java:8.0.33'
+    implementation 'org.xerial:sqlite-jdbc:3.45.1.0'
+}
+
+shadowJar {
+    archiveFileName = "${archiveBaseName.get()}.${archiveExtension.get()}"
+    manifest {
+        attributes "Main-Class": "pl.crystalek.budgetapp.main.FakeMain"
+    }
+
+}

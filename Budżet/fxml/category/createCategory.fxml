@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="335.0" prefWidth="368.0"
+            stylesheets="@../../css/font.css" xmlns="http://javafx.com/javafx/20.0.1"
+            fx:controller="pl.crystalek.budgetapp.controller.impl.CreateCategoryController">
+    <children>
+        <Pane layoutY="-4.0" prefHeight="84.0" prefWidth="368.0" style="-fx-background-color: #52438F;">
+            <children>
+                <Label alignment="CENTER" layoutX="9.0" layoutY="21.0" prefHeight="39.0" prefWidth="351.0"
+                       text="Tworzenie kategorii" textFill="WHITE">
+                    <font>
+                        <Font name="Comic Sans MS" size="31.0"/>
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Button layoutX="213.0" layoutY="280.0" mnemonicParsing="false" onAction="#cancel" prefHeight="43.0"
+                prefWidth="118.0" stylesheets="@../../css/receiptButton.css" text="Anuluj tworzenie"/>
+        <Button layoutX="37.0" layoutY="280.0" mnemonicParsing="false" onAction="#create" prefHeight="43.0"
+                prefWidth="118.0" stylesheets="@../../css/receiptButton.css" text="Stwórz"/>
+        <Label fx:id="dialogLabel" alignment="CENTER" layoutX="36.0" layoutY="219.0" prefHeight="39.0" prefWidth="294.0"
+               textAlignment="CENTER" textFill="#36e158">
+            <font>
+                <Font name="Comic Sans MS" size="21.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="categoryNameTextField" layoutX="36.0" layoutY="106.0" prefHeight="35.0" prefWidth="294.0"
+                   promptText="Nazwa kategorii" stylesheets="@../../css/textfield.css"/>
+        <ColorPicker fx:id="categoryColorPicker" layoutX="37.0" layoutY="166.0" prefHeight="35.0" prefWidth="294.0"
+                     promptText="Kolor kategorii" style="-fx-background-color: white;">
+            <value>
+                <Color/>
+            </value>
+        </ColorPicker>
+    </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+.tab-pane .tab-header-arena .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane {
+    -fx-tab-max-width: 90px;
+    -fx-tab-max-height: 50px;
+}
+
+.tab {
+    -fx-background-insets: 0 0 0 0, 0, 0;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #FFFFFF;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #6F5CC2;
+    -fx-border-color: #6F5CC2;
+    -fx-border-width: 0px 0px 2px 0px;
+
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #A5A9B4;
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #6F5CC2;
+}
+
+.tab:selected .focus-indicator
+{
+    -fx-focus-color: transparent;
+    -fx-border-color: transparent;
+}

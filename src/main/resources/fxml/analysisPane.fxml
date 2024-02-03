@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="456.0" prefWidth="757.0" stylesheets="/css/font.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.crystalek.budgetapp.controller.impl.AnalysisController">
+    <top>
+        <HBox prefHeight="100.0" prefWidth="400.0" stylesheets="/css/textfield.css" BorderPane.alignment="CENTER">
+            <children>
+                <VBox prefHeight="147.0" prefWidth="357.0" spacing="5.0">
+                    <children>
+                        <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#showPeriodExpenses" prefHeight="100.0" prefWidth="400.0" stylesheets="/css/receiptButton.css" text="Wyświetl zestawienie wydatków w danym okresie" textAlignment="CENTER">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#showPeriodBills" prefHeight="100.0" prefWidth="400.0" stylesheets="/css/receiptButton.css" text="Wyświetl zestawienie rachunków w danym okresie" textAlignment="CENTER">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#showYearExpenses" prefHeight="100.0" prefWidth="400.0" stylesheets="/css/receiptButton.css" text="Wyświetl roczne zestawienie wydatków" textAlignment="CENTER">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#showYearBills" prefHeight="100.0" prefWidth="400.0" stylesheets="/css/receiptButton.css" text="Wyświetl roczne zestawienie rachunków" textAlignment="CENTER">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+                <DatePicker fx:id="fromDatePicker" prefWidth="133.0" promptText="Od:" stylesheets="/css/datepicker.css">
+                    <HBox.margin>
+                        <Insets top="122.0" />
+                    </HBox.margin>
+                </DatePicker>
+                <DatePicker fx:id="toDatePicker" prefWidth="133.0" promptText="Do:" stylesheets="/css/datepicker.css">
+                    <HBox.margin>
+                        <Insets top="122.0" />
+                    </HBox.margin>
+                </DatePicker>
+                <ComboBox fx:id="chartTypeComboBox" prefHeight="27.0" prefWidth="133.0" promptText="Rodzaj wykresu" stylesheets="/css/combobox.css">
+                    <HBox.margin>
+                        <Insets top="122.0" />
+                    </HBox.margin>
+                </ComboBox>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </HBox>
+    </top>
+    <center>
+        <PieChart legendSide="RIGHT" BorderPane.alignment="CENTER" />
+    </center>
+    <bottom>
+        <Label fx:id="monthMoneyLabel" alignment="CENTER" prefHeight="17.0" prefWidth="471.0" text="Wydano w tym miesiącu {MONTH_MONEY} zł" textFill="#3000f2" BorderPane.alignment="CENTER">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+    </bottom>
+</BorderPane>

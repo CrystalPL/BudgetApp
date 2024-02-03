@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="456.0" prefWidth="757.0" stylesheets="/css/font.css"
+            xmlns="http://javafx.com/javafx/20.0.1"
+            fx:controller="pl.crystalek.budgetapp.controller.impl.SettingsController">
+    <children>
+        <VBox fx:id="databaseVBox" layoutX="420.0" layoutY="107.0" prefHeight="274.0" prefWidth="323.0" spacing="28.0"
+              stylesheets="/css/textfield.css">
+            <children>
+                <TextField fx:id="databaseHostnameTextField" prefHeight="47.0" prefWidth="363.0" promptText="Hostname"/>
+                <TextField fx:id="databasePortTextField" layoutX="10.0" layoutY="10.0" prefHeight="47.0"
+                           prefWidth="294.0" promptText="Port"/>
+                <TextField fx:id="databaseUserTextField" layoutX="10.0" layoutY="65.0" prefHeight="47.0"
+                           prefWidth="294.0" promptText="Użytkownik"/>
+                <TextField fx:id="databasePasswordTextField" layoutX="10.0" layoutY="120.0" prefHeight="47.0"
+                           prefWidth="294.0" promptText="Hasło"/>
+                <TextField fx:id="databaseNameTextField" layoutX="10.0" layoutY="85.0" prefHeight="47.0"
+                           prefWidth="294.0" promptText="Nazwa bazy danych"/>
+            </children>
+        </VBox>
+        <VBox layoutX="48.0" layoutY="147.0" prefHeight="195.0" prefWidth="256.0" spacing="20.0"
+              stylesheets="/css/receiptButton.css">
+            <children>
+                <Button alignment="CENTER" mnemonicParsing="false" onAction="#importSettings" prefHeight="44.0"
+                        prefWidth="256.0" text="Importuj ustawienia" textAlignment="CENTER" textOverrun="CLIP"
+                        wrapText="true"/>
+                <Button alignment="CENTER" mnemonicParsing="false" onAction="#importAppData" prefHeight="44.0"
+                        prefWidth="277.0" text="Importuj dane aplikacji" textAlignment="CENTER" wrapText="true"/>
+                <Button alignment="CENTER" mnemonicParsing="false" onAction="#exportAppData" prefHeight="44.0"
+                        prefWidth="283.0" text="Eksportuj dane aplikacji" textAlignment="CENTER" wrapText="true"/>
+                <Button alignment="CENTER" mnemonicParsing="false" onAction="#exportSettings" prefHeight="44.0"
+                        prefWidth="310.0" text="Eksportuj ustawienia" textAlignment="CENTER" textOverrun="CLIP"
+                        wrapText="true"/>
+            </children>
+        </VBox>
+        <CheckBox fx:id="localeDataCheckBox" layoutX="69.0" layoutY="73.0" mnemonicParsing="false" prefHeight="34.0"
+                  prefWidth="214.0" selected="true" stylesheets="/css/checkBox.css" text="Przechowuj dane lokalnie"
+                  textAlignment="CENTER" textFill="#52438f">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </CheckBox>
+    </children>
+</AnchorPane>

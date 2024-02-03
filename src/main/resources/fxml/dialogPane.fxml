@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="711.0" style="-fx-background-color: #6F5CC2;" stylesheets="/css/font.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.crystalek.budgetapp.controller.impl.DialogController">
+    <children>
+        <Label fx:id="headerTextLabel" alignment="CENTER" layoutX="19.0" layoutY="14.0" prefHeight="54.0" prefWidth="674.0" style="-fx-background-color: white;" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+        <Button layoutX="571.0" layoutY="360.0" mnemonicParsing="false" onAction="#okButton" prefHeight="46.0" prefWidth="122.0" stylesheets="/css/receiptButton.css" text="OK">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <ImageView fx:id="infoImageView" fitHeight="54.0" fitWidth="58.0" layoutX="635.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+        <AnchorPane layoutX="19.0" layoutY="94.0" prefHeight="260.0" prefWidth="674.0" stylesheets="/css/scrollBar.css">
+            <children>
+                <Label fx:id="contentTextLabel" alignment="CENTER" prefHeight="260.0" prefWidth="674.0" style="-fx-background-color: white;" textAlignment="CENTER" wrapText="true">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

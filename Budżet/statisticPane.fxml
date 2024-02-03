@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<TabPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="456.0" prefWidth="757.0" stylesheets="@../css/tabPane.css"
+         tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/20.0.1"
+         fx:controller="pl.crystalek.budgetapp.HelloApplication">
+    <tabs>
+        <Tab text="Miesięczne">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <VBox fx:id="monthStatisticVBox" layoutY="80.0" prefHeight="266.0" prefWidth="757.0"
+                              spacing="80.0">
+                            <children>
+                                <HBox prefHeight="92.0" prefWidth="757.0" spacing="24.0">
+                                    <children>
+                                        <VBox maxHeight="1.7976931348623157E308" prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #2a73ff;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-coins-50.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="52.0"
+                                                       prefHeight="21.0" prefWidth="170.0" text="Wydanych pieniędzy"
+                                                       textAlignment="CENTER" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets/>
+                                            </HBox.margin>
+                                        </VBox>
+                                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #e6395f;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-money-bag-50.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="21.0" prefWidth="170.0"
+                                                       text="Najdroższa kategoria" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #c93c9d;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-dollars-32.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="52.0"
+                                                       prefHeight="21.0" prefWidth="170.0" text="Najdroższa rzecz"
+                                                       textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #cbcf06;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-shop-50.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="52.0"
+                                                       prefHeight="21.0" prefWidth="170.0"
+                                                       text="Najczęściej odwiedzany sklep" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                    <padding>
+                                        <Insets left="2.0"/>
+                                    </padding>
+                                </HBox>
+                                <HBox prefHeight="92.0" prefWidth="757.0" spacing="24.0">
+                                    <children>
+                                        <VBox prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #e38634;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-buy-50.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="52.0"
+                                                       prefHeight="21.0" prefWidth="170.0" text="Ilość zakupów"
+                                                       textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets/>
+                                            </HBox.margin>
+                                        </VBox>
+                                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #f28dbe;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-bird-64.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="52.0"
+                                                       prefHeight="21.0" prefWidth="170.0" text="Ola wydała"
+                                                       textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #47cc55;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-year-of-ox-48.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="52.0"
+                                                       prefHeight="21.0" prefWidth="170.0" text="Janek wydał"
+                                                       textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #34e3ba;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-ticket-50.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="52.0"
+                                                       prefHeight="21.0" prefWidth="170.0" text="Kupionych biletów"
+                                                       textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                    <padding>
+                                        <Insets left="2.0"/>
+                                    </padding>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Całościowe">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <VBox fx:id="overallStatisticVBox" layoutY="80.0" prefHeight="266.0" prefWidth="757.0"
+                              spacing="80.0">
+                            <children>
+                                <HBox prefHeight="92.0" prefWidth="757.0" spacing="24.0">
+                                    <children>
+                                        <VBox maxHeight="1.7976931348623157E308" prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #2a73ff;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-coins-50.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="52.0"
+                                                       prefHeight="21.0" prefWidth="170.0" text="Wydanych pieniędzy"
+                                                       textAlignment="CENTER" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets/>
+                                            </HBox.margin>
+                                        </VBox>
+                                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #e6395f;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-money-bag-50.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="21.0" prefWidth="170.0"
+                                                       text="Najdroższa kategoria" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #c93c9d;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-dollars-32.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="52.0"
+                                                       prefHeight="21.0" prefWidth="170.0" text="Najdroższa rzecz"
+                                                       textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #cbcf06;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-shop-50.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="52.0"
+                                                       prefHeight="21.0" prefWidth="170.0"
+                                                       text="Najczęściej odwiedzany sklep" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                    <padding>
+                                        <Insets left="2.0"/>
+                                    </padding>
+                                </HBox>
+                                <HBox prefHeight="92.0" prefWidth="757.0" spacing="24.0">
+                                    <children>
+                                        <VBox prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #e38634;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-buy-50.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="52.0"
+                                                       prefHeight="21.0" prefWidth="170.0" text="Ilość zakupów"
+                                                       textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets/>
+                                            </HBox.margin>
+                                        </VBox>
+                                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #f28dbe;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-bird-64.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="52.0"
+                                                       prefHeight="21.0" prefWidth="170.0" text="Ola wydała"
+                                                       textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #47cc55;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-year-of-ox-48.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="52.0"
+                                                       prefHeight="21.0" prefWidth="170.0" text="Janek wydał"
+                                                       textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #34e3ba;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-ticket-50.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="52.0"
+                                                       prefHeight="21.0" prefWidth="170.0" text="Kupionych biletów"
+                                                       textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                    <padding>
+                                        <Insets left="2.0"/>
+                                    </padding>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Rachunków">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <VBox fx:id="billsStatisticPane" layoutX="100.0" layoutY="94.0" prefHeight="237.0"
+                              prefWidth="557.0" spacing="50.0">
+                            <children>
+                                <HBox prefHeight="92.0" prefWidth="557.0" spacing="24.0">
+                                    <children>
+                                        <VBox maxHeight="1.7976931348623157E308" prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #dbc837;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-electricity-50.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="52.0"
+                                                       prefHeight="21.0" prefWidth="170.0" text="Zużycie prądu"
+                                                       textAlignment="CENTER" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets/>
+                                            </HBox.margin>
+                                        </VBox>
+                                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #39c1e6;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-water-50.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="21.0" prefWidth="170.0"
+                                                       text="Zużycie wody" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #d12826;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-gas-50.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="52.0"
+                                                       prefHeight="21.0" prefWidth="170.0" text="Zużycie gazu"
+                                                       textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="92.0" prefWidth="557.0" spacing="24.0">
+                                    <children>
+                                        <VBox prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #9e8d06;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-card-payment-50.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="52.0"
+                                                       prefHeight="21.0" prefWidth="170.0" text="Pieniądze za prąd"
+                                                       textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets/>
+                                            </HBox.margin>
+                                        </VBox>
+                                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #06627a;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-card-payment-50.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="52.0"
+                                                       prefHeight="21.0" prefWidth="170.0" text="Pieniądze za wode"
+                                                       textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="92.0" prefWidth="170.0"
+                                              style="-fx-background-color: #820b09;">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="192.0">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                                                                   preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/icons8-card-payment-50.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="8.0"/>
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="0.0"
+                                                       prefWidth="170.0" text="22000" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="15.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="52.0"
+                                                       prefHeight="21.0" prefWidth="170.0" text="Pieniądze za gaz"
+                                                       textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Tahoma" size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

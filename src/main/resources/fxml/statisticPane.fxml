@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<TabPane prefHeight="456.0" prefWidth="757.0" stylesheets="/css/tabPane.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.crystalek.budgetapp.controller.impl.StatisticController">
+    <tabs>
+        <Tab text="Miesięczne">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <VBox fx:id="monthStatisticVBox" layoutY="80.0" prefHeight="266.0" prefWidth="757.0" spacing="80.0" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Całościowe">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <VBox fx:id="overallStatisticVBox" layoutY="80.0" prefHeight="266.0" prefWidth="757.0" spacing="80.0" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Rachunków">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <VBox fx:id="billsStatisticVBox" layoutX="100.0" layoutY="94.0" prefHeight="237.0" prefWidth="557.0" spacing="50.0" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+      <Tab text="Użytkowników">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox fx:id="usersStatisticVBox" layoutY="80.0" prefHeight="266.0" prefWidth="757.0" spacing="80.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+    </tabs>
+</TabPane>
